@@ -4,7 +4,7 @@ import { message, Tabs } from 'antd';
 import React, { useState } from 'react';
 import { history, Link } from 'umi';
 // 注意：这里的 userRegisterRequest 对应你后端生成的接口定义
-import { userRegisterUsingPost } from '@/services/yuapi-backend/userController';
+import { userRegisterUsingPost } from '@/services/api-backend/userController';
 
 const Register: React.FC = () => {
   const [type, setType] = useState<string>('account');

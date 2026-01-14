@@ -18,7 +18,7 @@ import { history, useModel, Link } from '@umijs/max';
 import { Alert, message, Space, Divider, Tabs } from 'antd';
 import React, { useState, useEffect, useRef } from 'react';
 import styles from './index.less';
-import { userLoginUsingPost } from '@/services/yuapi-backend/userController';
+import { userLoginUsingPost } from '@/services/api-backend/userController';
 
 const LoginMessage: React.FC<{
   content: string;

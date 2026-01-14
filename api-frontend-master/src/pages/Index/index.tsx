@@ -1,7 +1,7 @@
 import { PageContainer } from '@ant-design/pro-components';
 import React, { useEffect, useState } from 'react';
 import { List, message } from 'antd';
-import { listInterfaceInfoByPageUsingGet } from '@/services/yuapi-backend/interfaceInfoController';
+import { listInterfaceInfoByPageUsingGet } from '@/services/api-backend/interfaceInfoController';
 
 /**
  * 主页

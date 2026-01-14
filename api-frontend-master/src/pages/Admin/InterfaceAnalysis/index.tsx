@@ -2,7 +2,7 @@ import { PageContainer } from '@ant-design/pro-components';
 import '@umijs/max';
 import React, {useEffect, useState} from 'react';
 import ReactECharts from 'echarts-for-react';
-import {listTopInvokeInterfaceInfoUsingGet} from "@/services/yuapi-backend/analysisController";
+import {listTopInvokeInterfaceInfoUsingGet} from "@/services/api-backend/analysisController";
 
 /**
  * 接口分析

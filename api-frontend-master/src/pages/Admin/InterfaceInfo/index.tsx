@@ -17,7 +17,7 @@ import {
   offlineInterfaceInfoUsingPost,
   onlineInterfaceInfoUsingPost,
   updateInterfaceInfoUsingPost
-} from '@/services/yuapi-backend/interfaceInfoController';
+} from '@/services/api-backend/interfaceInfoController';
 import CreateModal from '@/pages/Admin/InterfaceInfo/components/CreateModal';
 import UpdateModal from "@/pages/Admin/InterfaceInfo/components/UpdateModal";
 

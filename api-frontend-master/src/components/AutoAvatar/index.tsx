@@ -1,7 +1,7 @@
 import { UserOutlined } from '@ant-design/icons';
 import { Avatar, AvatarProps } from 'antd';
 import React, { useEffect, useState } from 'react';
-import { getAvatarUsingPost } from '@/services/yuapi-backend/commonController';
+import { getAvatarUsingPost } from '@/services/api-backend/commonController';
 
 interface Props extends AvatarProps {
   user?: API.UserVO;

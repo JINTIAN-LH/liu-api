@@ -4,7 +4,7 @@ import { Button, Card, Descriptions, Form, message, Input, Divider, Image, Empty
 import {
   getInterfaceInfoByIdUsingGet,
   invokeInterfaceInfoUsingPost,
-} from '@/services/yuapi-backend/interfaceInfoController';
+} from '@/services/api-backend/interfaceInfoController';
 import { useParams } from '@@/exports';
 
 const Index: React.FC = () => {
