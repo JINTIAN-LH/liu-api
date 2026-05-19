@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: yuapi-backend
-    env: docker
-    dockerfilePath: ./api-backend-master/Dockerfile
-    healthCheckPath: /api/doc.html
-    envVars:
-      - key: PORT
-        value: "7529"
