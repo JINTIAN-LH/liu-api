@@ -1,4 +1,4 @@
-FROM maven:3.8-openjdk-8 as build
+FROM maven:3.8-eclipse-temurin-8 as build
 WORKDIR /build
 
 COPY pom.xml .
@@ -14,7 +14,7 @@ RUN mvn -f yuapi-client-sdk/pom.xml install -DskipTests -q
 COPY src src/
 RUN mvn package -DskipTests -q
 
-FROM openjdk:8-jre-slim
+FROM eclipse-temurin:8-jre
 WORKDIR /app
 COPY --from=build /build/target/*.jar app.jar
 EXPOSE 7529
