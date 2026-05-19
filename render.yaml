@@ -1,0 +1,21 @@
+services:
+  # 后端 — Java SpringBoot API 服务
+  - type: web
+    name: yuapi-backend
+    env: docker
+    plan: free
+    dockerfilePath: ./api-backend-master/Dockerfile
+    healthCheckPath: /api/doc.html
+    envVars:
+      - key: PORT
+        value: "7529"
+
+  # 前端 — Ant Design Pro 静态站点
+  - type: static
+    name: yuapi-frontend
+    plan: free
+    buildCommand: cd api-frontend-master && npm install && npm run build
+    publishPath: ./api-frontend-master/dist
+    envVars:
+      - key: API_BASE_URL
+        value: https://yuapi-backend.onrender.com
